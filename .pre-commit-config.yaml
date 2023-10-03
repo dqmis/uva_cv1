@@ -7,10 +7,6 @@ repos:
       - id: trailing-whitespace
   - repo: local
     hooks:
-      - id: nbqa-isort
-        name: Run isort
-        entry: poetry run nbqa isort notebooks
-        language: system
       - id: nbqa-black
         name: Run black
         entry: poetry run nbqa black notebooks
